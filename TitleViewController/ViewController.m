@@ -7,16 +7,36 @@
 //
 
 #import "ViewController.h"
+#import "SWTitleViewController.h"
+#import "SWViewController.h"
 
 @interface ViewController ()
 
 @end
 
 @implementation ViewController
+- (IBAction)action:(id)sender {
+    SWViewController *firstVC = [SWViewController new];
+    firstVC.view.backgroundColor = [UIColor yellowColor];
+    firstVC.label.text = @"1";
+    SWViewController *secondVC = [SWViewController new];
+    secondVC.view.backgroundColor = [UIColor redColor];
+    secondVC.label.text = @"2";
+    SWViewController *thirdVC = [SWViewController new];
+    thirdVC.view.backgroundColor = [UIColor greenColor];
+    NSArray *arrVC = @[firstVC,secondVC,thirdVC];
+    thirdVC.label.text = @"3";
+    
+    SWTitleViewController *titleVC = [[SWTitleViewController alloc]initWithTitles:@[@"1",@"2",@"3"] TitleH:64 ViewControllers:arrVC];
+    [self presentViewController:titleVC animated:YES completion:nil];
+    
+}
+
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
 }
 
 

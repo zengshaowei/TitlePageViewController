@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4761D1F91DE343A500D5DF67 /* SWViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4761D1F81DE343A500D5DF67 /* SWViewController.m */; };
 		47FEECC01DE1E70A005D717B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 47FEECBF1DE1E70A005D717B /* main.m */; };
 		47FEECC31DE1E70A005D717B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 47FEECC21DE1E70A005D717B /* AppDelegate.m */; };
 		47FEECC61DE1E70A005D717B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47FEECC51DE1E70A005D717B /* ViewController.m */; };
@@ -15,6 +16,8 @@
 		47FEECCE1DE1E70A005D717B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47FEECCC1DE1E70A005D717B /* LaunchScreen.storyboard */; };
 		47FEECD91DE1E70A005D717B /* TitleViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 47FEECD81DE1E70A005D717B /* TitleViewControllerTests.m */; };
 		47FEECE41DE1E70A005D717B /* TitleViewControllerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 47FEECE31DE1E70A005D717B /* TitleViewControllerUITests.m */; };
+		47FEECF41DE1E776005D717B /* SWToolBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 47FEECF31DE1E776005D717B /* SWToolBar.m */; };
+		47FEECF71DE1E825005D717B /* SWTitleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47FEECF61DE1E825005D717B /* SWTitleViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4761D1F71DE343A500D5DF67 /* SWViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWViewController.h; sourceTree = "<group>"; };
+		4761D1F81DE343A500D5DF67 /* SWViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWViewController.m; sourceTree = "<group>"; };
 		47FEECBB1DE1E70A005D717B /* TitleViewController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TitleViewController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		47FEECBF1DE1E70A005D717B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		47FEECC11DE1E70A005D717B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +56,11 @@
 		47FEECDF1DE1E70A005D717B /* TitleViewControllerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TitleViewControllerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		47FEECE31DE1E70A005D717B /* TitleViewControllerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TitleViewControllerUITests.m; sourceTree = "<group>"; };
 		47FEECE51DE1E70A005D717B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		47FEECF21DE1E776005D717B /* SWToolBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWToolBar.h; sourceTree = "<group>"; };
+		47FEECF31DE1E776005D717B /* SWToolBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWToolBar.m; sourceTree = "<group>"; };
+		47FEECF51DE1E825005D717B /* SWTitleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWTitleViewController.h; sourceTree = "<group>"; };
+		47FEECF61DE1E825005D717B /* SWTitleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWTitleViewController.m; sourceTree = "<group>"; };
+		47FEECF81DE1E8C7005D717B /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,8 +111,10 @@
 		47FEECBD1DE1E70A005D717B /* TitleViewController */ = {
 			isa = PBXGroup;
 			children = (
+				47FEECF11DE1E751005D717B /* TitleViewController */,
 				47FEECC11DE1E70A005D717B /* AppDelegate.h */,
 				47FEECC21DE1E70A005D717B /* AppDelegate.m */,
+				47FEECF81DE1E8C7005D717B /* PrefixHeader.pch */,
 				47FEECC41DE1E70A005D717B /* ViewController.h */,
 				47FEECC51DE1E70A005D717B /* ViewController.m */,
 				47FEECC71DE1E70A005D717B /* Main.storyboard */,
@@ -138,6 +150,19 @@
 				47FEECE51DE1E70A005D717B /* Info.plist */,
 			);
 			path = TitleViewControllerUITests;
+			sourceTree = "<group>";
+		};
+		47FEECF11DE1E751005D717B /* TitleViewController */ = {
+			isa = PBXGroup;
+			children = (
+				47FEECF21DE1E776005D717B /* SWToolBar.h */,
+				47FEECF31DE1E776005D717B /* SWToolBar.m */,
+				47FEECF51DE1E825005D717B /* SWTitleViewController.h */,
+				47FEECF61DE1E825005D717B /* SWTitleViewController.m */,
+				4761D1F71DE343A500D5DF67 /* SWViewController.h */,
+				4761D1F81DE343A500D5DF67 /* SWViewController.m */,
+			);
+			path = TitleViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -276,9 +301,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4761D1F91DE343A500D5DF67 /* SWViewController.m in Sources */,
 				47FEECC61DE1E70A005D717B /* ViewController.m in Sources */,
 				47FEECC31DE1E70A005D717B /* AppDelegate.m in Sources */,
+				47FEECF71DE1E825005D717B /* SWTitleViewController.m in Sources */,
 				47FEECC01DE1E70A005D717B /* main.m in Sources */,
+				47FEECF41DE1E776005D717B /* SWToolBar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -373,7 +401,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -415,7 +443,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -428,7 +456,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = GRUN4CX57T;
+				GCC_PREFIX_HEADER = TitleViewController/PrefixHeader.pch;
 				INFOPLIST_FILE = TitleViewController/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = zengshaowei.TitleViewController;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -440,7 +470,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = GRUN4CX57T;
+				GCC_PREFIX_HEADER = TitleViewController/PrefixHeader.pch;
 				INFOPLIST_FILE = TitleViewController/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = zengshaowei.TitleViewController;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -516,6 +548,7 @@
 				47FEECEA1DE1E70A005D717B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		47FEECEB1DE1E70A005D717B /* Build configuration list for PBXNativeTarget "TitleViewControllerTests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +557,7 @@
 				47FEECED1DE1E70A005D717B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		47FEECEE1DE1E70A005D717B /* Build configuration list for PBXNativeTarget "TitleViewControllerUITests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +566,7 @@
 				47FEECF01DE1E70A005D717B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
